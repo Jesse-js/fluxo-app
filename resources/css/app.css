@@ -8,4 +8,125 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+
+/*Layout*/
+
+:root {
+    --ink: #0d0f14;
+    --surface: #13161d;
+    --card: #1a1e28;
+    --border: #272b38;
+    --muted: #4a5068;
+    --text: #cdd3e2;
+    --accent: #e8c97e;
+    --accent2: #c9a84c;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--ink);
+    color: var(--text);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.brand {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.brand-icon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .85rem;
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: .875rem;
+}
+
+.user-name {
+    color: var(--text);
+}
+
+.btn-logout {
+    padding: .45rem 1rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--muted);
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .82rem;
+    transition: all .2s;
+}
+
+.btn-logout:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.main {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.welcome {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: .5rem;
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: .95rem;
+    margin-bottom: 2.5rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem 2rem;
+}
+
+.card h3 {
+    font-size: 1rem;
+    color: var(--accent);
+    margin: 0 0 .75rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-size: .78rem;
+}
+
+.card p {
+    color: var(--text);
+    line-height: 1.65;
+    margin: 0;
 }
