@@ -9,6 +9,106 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
+    --color-dark-panel: #1a1e28;
+    --color-gold-text: #e8c97e;
+}
+
+/*Login*/
+/* Fontes */
+.font-display {
+    font-family: 'DM Serif Display', serif;
+}
+
+.font-body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Focus ring dourado */
+.input-field:focus {
+    outline: none;
+    border-color: #e8c97e;
+    box-shadow: 0 0 0 3px rgba(232, 201, 126, 0.15);
+}
+
+.input-field.is-error {
+    border-color: #f47f7f !important;
+}
+
+/* Transição dos painéis */
+.form-panel {
+    display: none;
+}
+
+.form-panel.active {
+    display: block;
+    animation: fadeSlide .25s ease;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Spinner */
+.spinner {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(13, 15, 20, .35);
+    border-top-color: #0d0f14;
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Segmentos da barra de força (controlados pelo JS) */
+.seg-active-1 {
+    background-color: #f47f7f !important;
+}
+
+.seg-active-2 {
+    background-color: #f4a77f !important;
+}
+
+.seg-active-3 {
+    background-color: #e8c97e !important;
+}
+
+.seg-active-4 {
+    background-color: #6fd0a4 !important;
+}
+
+/* Critério de senha satisfeito */
+.policy-item.ok {
+    color: #6fd0a4;
+}
+
+.policy-item.ok .policy-dot {
+    background-color: #6fd0a4;
+}
+
+/* Grid decorativo de fundo */
+.bg-grid {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
 /*Layout*/
 
 :root {
