@@ -12,7 +12,7 @@ function switchTab(tab) {
     // Ativa o botão
     const btn = document.getElementById('tab-' + tab);
     btn.setAttribute('aria-selected', 'true');
-    btn.classList.add('bg-[--color-dark-panel]', 'text-[--color-gold-text]', 'shadow-[0_2px_8px_rgba(0,0,0,.35)]');
+    btn.classList.add('bg-[#1a1e28]', 'text-[#e8c97e]', 'shadow-[0_2px_8px_rgba(0,0,0,.35)]');
     btn.classList.remove('bg-transparent', 'text-[#4a5068]');
 
     // Ativa o painel
